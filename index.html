@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Szovata</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">Travel</h2>
+            <div class="toggle"></div>
+        </header>
+        <video class = "video1" src="video.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>Sovata</h2>
+            <h3>Explore the beautiful city!</h3>
+            <p>Sovata is part of the Székely Land region of the historical Transylvania province. The first data about Sovata are from 1578. By 1583 it was already a village.
+
+                For 42 years, from 1876 until 1918, the village belonged to the Maros-Torda County of the Austrian-Hungarian Empire.
+                
+                Due to its salty lakes and warm water it became an increasingly popular health resort during the end of the 19th and the 20th century. It gained the status of town in 1952.</p>
+                <a href="#">Explore</a>
+        </div>
+
+        <ul class="social">
+            <li><a href = "#"><img src="facebook.png" /></a></li>
+            <li><a href = "#"><img src="instagram.png" /></a></li>
+            <li><a href = "#"><img src="gmail-logo.png" /></a></li>
+        </ul>
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a href = "#">Home</a></li>
+            <li><a href = "#">News</a></li>
+            <li><a href = "#">Destination</a></li>
+            <li><a href = "#">Blog</a></li>
+            <li><a href = "#">Contact</a></li>
+        </ul>
+    </div>
+    <script>
+        const menuToggle = document.querySelector('.toggle');
+        const showcase = document.querySelector('.showcase');
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            showcase.classList.toggle('active');
+        })
+    </script>
+
+    
+</body>
+</html>
